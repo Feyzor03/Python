@@ -1,0 +1,29 @@
+try:
+    number = int(input("введите число кармана (от 0 до 36 ): "))
+except ValueError:
+    print("ошибка ввода")
+else:
+    if not (0 <= number <= 36):
+        print("ошибка ввода")
+    elif number == 0:
+        print(f"число: {number} - это зелённый цвет")
+    elif 1 <= number <= 10:
+        if number % 2 != 0:
+            print(f"число: {number} - это красный цвет")
+        else:
+            print(f"число: {number} - это чёрный цвет")
+    elif 11 <= number <= 18:
+        if number % 2 != 0:
+            print(f"число: {number} - это чёрный цвет")
+        else:
+            print(f"число: {number} - это красный цвет")
+    elif 19 <= number <= 28:
+        if number % 2 != 0:
+            print(f"число: {number} - это красный цвет")
+        else:
+            print(f"число: {number} - это чёрный цвет")
+    elif 29 <= number <= 36:
+        if number % 2 != 0:
+            print(f"число: {number} - это чёрный цвет")
+        else:
+            print(f"число: {number} - это красный цвет")
